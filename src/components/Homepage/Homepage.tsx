@@ -16,6 +16,9 @@ function Homepage() {
     </p>
     <p></p>
   </div>
+  <div className="valiotsikko">
+    <h2>Drop your email in the box and you are in!</h2>
+  </div>
   <div className="formcontainer">
   <SignUpForm />
   </div>

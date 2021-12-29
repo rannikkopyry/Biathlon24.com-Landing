@@ -7,9 +7,11 @@
   background-repeat: repeat;
   height: 100vh;
   text-align: center;
+  margin: 0;
 
     @include respond(phone){
-        background-position: center ;
+        background-position: center;
+        background-repeat: repeat;
     }
 }
 
@@ -20,16 +22,17 @@
   display: flex;
   text-align: center;
   margin: auto;
+  background-color: black;
 
   .logocontainer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -20;
+    margin-top: 20px;
     img {
       @include respond(phone) {
         max-width: 90vw;
-        margin-top: 200px;
+        margin-top: 350px;
       }
     }
   }
@@ -43,7 +46,7 @@
     color: #ffbd59;
     text-align: center;
     padding: 10px;
-    margin-top: -40px;
+    margin-top: -100px;
     margin-left: 30;
     margin-right: 30;
     margin-bottom: 30px;
@@ -57,18 +60,47 @@
       
         margin-left: 30px;
         margin-right: 30px;
-        margin-bottom: 30px;
-        font-size: 15px;
+        margin-bottom: 0px;
+        font-size: 19px;
+        margin-top: 30px;
 
+    }
+  }
+
+  .valiotsikko{
+    font-family: "Lato", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 50px;
+    color: #ffbd59;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+    font-style: italic;
+    text-decoration: underline;
+  
+    @include respond(phone) {
+      margin-top: 170px;
+      font-size: 18px;
     }
   }
 
   .formcontainer {
     text-align: center;
+  
+  @include respond(phone) {
+    
+    margin-top: -35px;
+  }
   }
 
   .photocred{
     font-family: "Lato", sans-serif;
     font-family: "Roboto Condensed", sans-serif;
+    color: white;
+  
+  @include respond(phone) {
+    bottom: 5px;
+  }
   }
 }
