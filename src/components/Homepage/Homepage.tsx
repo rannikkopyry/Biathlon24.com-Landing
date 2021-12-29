@@ -2,7 +2,6 @@ import React from "react";
 import "./homepage.scss";
 import Logo from "../../images/Biathlon24uusiversio.png";
 import SignUpForm from "../SignupForm/SignupForm";
-import SuccessMessage from "../SuccessMessage/SuccessMessage";
 
 function Homepage() {
   return (
