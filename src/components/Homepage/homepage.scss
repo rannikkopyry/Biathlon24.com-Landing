@@ -1,0 +1,74 @@
+@import "../../styles/mixins.scss";
+
+#homepage {
+  align-items: center;
+  display: flex;
+  background-image: url("../../images/taustakuva2.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  text-align: center;
+
+    @include respond(phone){
+        background-position: center ;
+    }
+}
+
+.homepage {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  margin: auto;
+
+  .logocontainer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -20;
+    img {
+      @include respond(phone) {
+        max-width: 90vw;
+        margin-top: 200px;
+      }
+    }
+  }
+
+  .textcontainer {
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    color: #ffbd59;
+    text-align: center;
+    padding: 10px;
+    margin-top: -40px;
+    margin-left: 30;
+    margin-right: 30;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 27px;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.5);
+      
+
+    @include respond(phone) {
+      
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        font-size: 15px;
+
+    }
+  }
+
+  .formcontainer {
+    text-align: center;
+  }
+
+  .photocred{
+    font-family: "Lato", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+}

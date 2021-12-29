@@ -1,11 +1,10 @@
-import React from 'react';
-import './App.css';
-import SignUpForm from './SignupForm';
+import React from "react";
+import Homepage from "../src/components/Homepage/Homepage";
 
 function App() {
   return (
     <div className="App">
-      <SignUpForm/>
+      <Homepage />
     </div>
   );
 }
