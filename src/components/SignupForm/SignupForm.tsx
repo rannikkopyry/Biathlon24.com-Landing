@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -46,7 +46,7 @@ const SignUpForm = () => {
         onSubmit={submitForm}
       >
         {(formik) => (
-         <Form>
+         <Form data-netlify-recaptcha="true" data-netlify="true">
          
          <Field name="email" placeholder="Your email address" label="Email"/>
          <ErrorMessage name="email" className="error" />
