@@ -1,7 +1,7 @@
 @import "../../styles/mixins.scss";
 
 .form {
-  padding: 20px;
+  padding: 1.25rem;
   font-family: "Lato", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   align-items: center;
@@ -10,41 +10,40 @@
   color: #ffbd59;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 
   @include respond(phone) {
     text-align: center;
-    margin: 32px;
+    margin: 2rem;
   }
 
   input {
-    border: 3px solid #ffbd59;
-    padding: 25px;
-    margin: 5px;
-    border-radius: 10px;
-    font-size: 18px;
+    border: 0.188rem solid #ffbd59;
+    padding: 1.563rem;
+    margin: 0.313rem;
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
   }
 
   button {
     background-color: #ffbd59;
-    border: 3px solid #ffbd59;
-    border-radius: 10px;
+    border: 0.188rem solid #ffbd59;
+    border-radius: 0.625rem;
     color: black;
     font-family: "Lato", sans-serif;
     font-family: "Roboto Condensed", sans-serif;
-    padding: 25px;
-    margin: 5px;
+    padding: 1.563rem;
+    margin: 0.313rem;
     cursor: pointer;
     font-weight: bold;
-    letter-spacing: 0.7px;
-    font-size: 18px;
+    letter-spacing: 0.044rem;
+    font-size: 1.125rem;
     opacity: 0.8;
-    
   }
 
   button:hover {
-  opacity: 1;
+    opacity: 1;
   }
 }

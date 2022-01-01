@@ -9,10 +9,10 @@
   text-align: center;
   margin: 0;
 
-    @include respond(phone){
-        background-position: center;
-        background-repeat: repeat;
-    }
+  @include respond(phone) {
+    background-position: center;
+    background-repeat: repeat;
+  }
 }
 
 .homepage {
@@ -28,11 +28,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     img {
       @include respond(phone) {
         max-width: 90vw;
-        margin-top: 350px;
+        margin-top: 21.875rem;
       }
     }
   }
@@ -45,62 +45,58 @@
     text-transform: uppercase;
     color: #ffbd59;
     text-align: center;
-    padding: 10px;
-    margin-top: -100px;
-    margin-left: 30;
-    margin-right: 30;
-    margin-bottom: 30px;
+    padding: 0.625rem;
+    margin-top: -0.625rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    margin-bottom: 1.875rem;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 1.688rem;
     font-style: italic;
     background-color: rgba(0, 0, 0, 0.5);
-      
 
     @include respond(phone) {
-      
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 0px;
-        font-size: 19px;
-        margin-top: 30px;
-
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+      margin-bottom: 0rem;
+      font-size: 1.188rem;
+      margin-top: 1.875rem;
     }
   }
 
-  .valiotsikko{
+  .valiotsikko {
     font-family: "Lato", sans-serif;
     font-family: "Roboto Condensed", sans-serif;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     color: #ffbd59;
-    font-size: 20px;
+    font-size: 1.25rem;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin: 10px;
+    padding: 0.625rem;
+    margin: 0.625rem;
     font-style: italic;
     text-decoration: underline;
-  
+
     @include respond(phone) {
-      margin-top: 170px;
-      font-size: 18px;
+      margin-top: 10.625rem;
+      font-size: 1.125rem;
     }
   }
 
   .formcontainer {
     text-align: center;
-  
-  @include respond(phone) {
-    
-    margin-top: -35px;
-  }
+
+    @include respond(phone) {
+      margin-top: -2.188rem;
+    }
   }
 
-  .photocred{
+  .photocred {
     font-family: "Lato", sans-serif;
     font-family: "Roboto Condensed", sans-serif;
     color: white;
-  
-  @include respond(phone) {
-    bottom: 5px;
-  }
+
+    @include respond(phone) {
+      bottom: 0.313rem;
+    }
   }
 }

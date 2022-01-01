@@ -3,37 +3,36 @@
 .success-message {
   display: flex;
   flex-direction: row;
-    align-items: center;
+  align-items: center;
   font-family: "Lato", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 1.25rem;
   max-width: 90vw;
   text-align: center;
-  
+
   @include respond(phone) {
-    margin: 32px;
+    margin: 2rem;
   }
 
-.text{
-    font-size: 20px;
+  .text {
+    font-size: 1.25rem;
     color: #ffbd59;
 
     @include respond(phone) {
-      margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        font-size: 15px;
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+      margin-bottom: 1.875rem;
+      font-size: 0.938rem;
     }
-}
+  }
 
-img{
-    width: 120px;
-    margin-left: 10px;
+  img {
+    width: 7.5rem;
+    margin-left: 0.625rem;
 
     @include respond(phone) {
-      max-width: 80px;
+      max-width: 5rem;
     }
+  }
 }
-}
-
