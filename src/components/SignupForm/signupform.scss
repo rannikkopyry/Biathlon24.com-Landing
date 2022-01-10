@@ -11,7 +11,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3.125rem;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 
   @include respond(phone) {
@@ -38,9 +37,13 @@
     margin: 0.313rem;
     cursor: pointer;
     font-weight: bold;
-    letter-spacing: 0.044rem;
     font-size: 1.125rem;
-    opacity: 0.8;
+    opacity: 0.7;
+    
+    @include respond(phone) {
+      border: 0.188rem solid black;
+    }
+   
   }
 
   button:hover {

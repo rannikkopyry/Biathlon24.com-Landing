@@ -9,22 +9,12 @@ function Homepage() {
     <div className="logocontainer">
     <img src={Logo} alt="" />
   </div>
-  <div className="textcontainer">
-    <h1>Something interesting is under construction...</h1>
-    <p>
-      Sign up for our newsletter to receive news and updates from the development of the site and the final release date!
-    </p>
-    <p></p>
-  </div>
   <div className="valiotsikko">
-    <h2>Drop your email in the box and you are in!</h2>
+    <h2>Subscribe for our newsletter!</h2>
   </div>
   <div className="formcontainer">
   <SignUpForm />
   </div>
-      <div className="photocred">
-        <p>Photo: YLE</p>
-      </div>
     </div>
     
   );

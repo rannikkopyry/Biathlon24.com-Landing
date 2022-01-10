@@ -3,15 +3,17 @@
 #homepage {
   align-items: center;
   display: flex;
-  background-image: url("../../images/taustakuva2.jpg");
+  background-image: linear-gradient(135deg, black 30%, #ffbd69 70%);
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   background-repeat: repeat;
   height: 100vh;
   text-align: center;
   margin: 0;
+  width: 100vw;
 
   @include respond(phone) {
     background-position: center;
-    background-repeat: repeat;
   }
 }
 
@@ -22,63 +24,35 @@
   display: flex;
   text-align: center;
   margin: auto;
-  background-color: black;
 
   .logocontainer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 1.25rem;
+    margin-top: 2.25rem;
     img {
       @include respond(phone) {
         max-width: 90vw;
-        margin-top: 21.875rem;
+        margin-top: 3.875rem;
       }
-    }
-  }
-
-  .textcontainer {
-    align-items: center;
-    flex-direction: column;
-    font-family: "Lato", sans-serif;
-    font-family: "Roboto Condensed", sans-serif;
-    text-transform: uppercase;
-    color: #ffbd59;
-    text-align: center;
-    padding: 0.625rem;
-    margin-top: -0.625rem;
-    margin-left: 1.875rem;
-    margin-right: 1.875rem;
-    margin-bottom: 1.875rem;
-    font-weight: bold;
-    font-size: 1.688rem;
-    font-style: italic;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    @include respond(phone) {
-      margin-left: 1.875rem;
-      margin-right: 1.875rem;
-      margin-bottom: 0rem;
-      font-size: 1.188rem;
-      margin-top: 1.875rem;
     }
   }
 
   .valiotsikko {
     font-family: "Lato", sans-serif;
     font-family: "Roboto Condensed", sans-serif;
-    margin-top: 3.125rem;
-    color: #ffbd59;
+    color: black;
     font-size: 1.25rem;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 0.625rem;
-    margin: 0.625rem;
+    margin-top: -6.625rem;
     font-style: italic;
-    text-decoration: underline;
+    opacity: 0.8;
 
     @include respond(phone) {
-      margin-top: 10.625rem;
+      margin-bottom: 1rem;
       font-size: 1.125rem;
+      color: #ffbd59;
+      margin-top: -4.5rem;
     }
   }
 
@@ -86,17 +60,7 @@
     text-align: center;
 
     @include respond(phone) {
-      margin-top: -2.188rem;
-    }
-  }
-
-  .photocred {
-    font-family: "Lato", sans-serif;
-    font-family: "Roboto Condensed", sans-serif;
-    color: white;
-
-    @include respond(phone) {
-      bottom: 0.313rem;
+      margin-top: -2.5rem;
     }
   }
 }
